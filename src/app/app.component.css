@@ -1,0 +1,22 @@
+input {
+    caret-color:tomato;
+}
+.divs {
+    background-color:#EDB5BF;
+}
+.h1s {
+    text-align: center;background-color:#99CED3;
+    font-family: "Playfair Display",serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.mat-icon {
+    font-size: 50px;
+}
+.navbar {
+    justify-content: space-between;
+}
+
+button {
+    margin-right: 1rem;
+}

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myngApp';
+  title = 'TEMPERATURE CONVERTER';
+  public Celsius:number=0.0;
+  public Fahrenheit:number=0.0;
 }

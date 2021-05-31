@@ -1,9 +1,11 @@
+
 input {
     caret-color:tomato;
 }
 .divs {
     background-color:#EDB5BF;
 }
+
 .h1s {
     text-align: center;background-color:#99CED3;
     font-family: "Playfair Display",serif;

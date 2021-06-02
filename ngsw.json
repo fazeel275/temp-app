@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1622389107856,
-  "index": "/index.html",
+  "timestamp": 1622656159845,
+  "index": "https://fazeel275.github.io/temp-app/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,14 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/favicon.ico",
-        "/index.html",
-        "/main.js",
-        "/manifest.webmanifest",
-        "/polyfills.js",
-        "/runtime.js",
-        "/styles.css",
-        "/vendor.js"
+        "https://fazeel275.github.io/temp-app/favicon.ico",
+        "https://fazeel275.github.io/temp-app/index.html",
+        "https://fazeel275.github.io/temp-app/main.42d8f5891d2cc1972ab1.js",
+        "https://fazeel275.github.io/temp-app/manifest.webmanifest",
+        "https://fazeel275.github.io/temp-app/polyfills.94daefd414b8355106ab.js",
+        "https://fazeel275.github.io/temp-app/runtime.7b63b9fd40098a2e8207.js",
+        "https://fazeel275.github.io/temp-app/styles.03f7e6c126c5cf9977f5.css"
       ],
       "patterns": []
     },
@@ -30,36 +29,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-128x128.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-144x144.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-152x152.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-192x192.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-384x384.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-512x512.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-72x72.png",
+        "https://fazeel275.github.io/temp-app/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "4207b3be4e930dbd5d72a5114aca991b98ccff8d",
-    "/main.js": "2f667ba8fe140ab9577f89fbccc64ac82cd84005",
-    "/manifest.webmanifest": "6410f352107eeacd5e0ea4ca89c65c36b9710602",
-    "/polyfills.js": "45eca8b25f293fe420fb5faed379ce1dc568d245",
-    "/runtime.js": "154c277c076cfc8ee335df5d9349395c6bf58db5",
-    "/styles.css": "2820713653bc21f62687bdc739c24cdcc709460f",
-    "/vendor.js": "ad0e36d60cd8375bfd597242d0b43ca05fcb55eb"
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://fazeel275.github.io/temp-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://fazeel275.github.io/temp-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://fazeel275.github.io/temp-app/index.html": "51e418afa42949840272254d6b96f9add646eede",
+    "https://fazeel275.github.io/temp-app/main.42d8f5891d2cc1972ab1.js": "42ddd7c25ee6ec2cba20ff7a8b9a3fe36227fd2f",
+    "https://fazeel275.github.io/temp-app/manifest.webmanifest": "6410f352107eeacd5e0ea4ca89c65c36b9710602",
+    "https://fazeel275.github.io/temp-app/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "https://fazeel275.github.io/temp-app/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://fazeel275.github.io/temp-app/styles.03f7e6c126c5cf9977f5.css": "8eadb5d73feaa3499943aefc302d94ce8f2cb61c"
   },
   "navigationUrls": [
     {

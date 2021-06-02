@@ -1,4 +1,4 @@
-import { Component,OnInit,AfterViewInit,ChangeDetectorRef,OnDestroy} from '@angular/core';
+import { Component,OnInit,OnDestroy} from '@angular/core';
 import {MediaObserver, MediaChange} from '@angular/flex-layout';
 import {Subscription} from 'rxjs';
 
@@ -7,29 +7,25 @@ import {Subscription} from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, AfterViewInit{
+export class AppComponent implements OnInit,OnDestroy{
   title = 'TEMPERATURE CONVERTER';
   public Celsius:number=0.0;
   public Fahrenheit:number=0.0;
-  private mediaSub!: Subscription;
+   mediaSub: Subscription = new Subscription;
+   deviceXs!: boolean;
   constructor(
-    private cdRef: ChangeDetectorRef,
     public mediaObserver:MediaObserver
     ) {
 
     }
   ngOnInit() {
     this.mediaSub = this.mediaObserver.media$.subscribe(
-      (change:MediaChange) => {
-        console.log(change.mqAlias);
-        console.log(change.mediaQuery);
+      (result:MediaChange) => {
+        console.log(result.mqAlias);
+        this.deviceXs = result.mqAlias ==='xs' ? true:false;
       }
-    );
+      );
   }
-  ngAfterViewInit() {
-    
-  }
-
   ngOnDestroy() {
     this.mediaSub.unsubscribe();
   }

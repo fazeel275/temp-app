@@ -1,35 +1,67 @@
-     <mat-toolbar color="primary" class="navbar">
-        <div><mat-icon>eco</mat-icon> Fazeel</div>
-        <div>
-           <button mat-flat-button [matMenuTriggerFor]="appMenu1" color="warn"><b>About</b></button>
-            <mat-menu #appMenu1="matMenu">
-                <p mat-menu-item><b>Change from &#8451; to &#8457; and vice-versa</b></p>
-            </mat-menu>
-            <button mat-flat-button [matMenuTriggerFor]="appMenu2" color="warn"><b>Formula</b></button>
-            <mat-menu #appMenu2="matMenu">
+
+    <mat-toolbar color="primary">
+        <mat-toolbar-row fxLayoutAlign="space-between center">
+            <div fxLayout="row">
+                <button mat-button>
+                    <mat-icon>eco</mat-icon>
+                    <span class="logo"><b>Fazeel</b></span>
+                </button>
+                <div *ngIf="!deviceXs">
+                <button mat-flat-button [matMenuTriggerFor]="appMenu1" color="warn"><b>About</b></button>
+                <mat-menu #appMenu1="matMenu">
+                    <p mat-menu-item><b>Change from &#8451; to &#8457; and vice-versa</b></p>
+                </mat-menu>
+                <button mat-flat-button [matMenuTriggerFor]="appMenu2" color="warn"><b>Formula</b></button>
+                <mat-menu #appMenu2="matMenu">
                 <button mat-menu-item><b>C = (F − 32) * 5/9</b></button>
                 <button mat-menu-item><b>F=C(9/5)+32</b></button>
-            </mat-menu>
-            <button mat-flat-button [matMenuTriggerFor]="appMenu3" color="warn"><b>Contact</b></button>
-            <mat-menu #appMenu3="matMenu">
-                <button mat-menu-item><b>Developed by:Fazeel Ansari</b></button>
-                <button mat-menu-item><b>Phone: (+91) 112233</b></button>
-            </mat-menu>
-        </div>
-        </mat-toolbar>
-    <p style="text-align: center;color:#A16E83;" class="mat-display-3"><b>{{title}}</b></p>
-    <div class="mat-display-1 divs" style="margin: auto;width: 50%;">
-    <h3 class="mat-display-1 h1s"><b>Celsius to Fahrenheit</b></h3>
-    <p>Celsius:<input type="number" name="Celsius" [(ngModel)]="Celsius">&#8451;</p>
-    <p>Fahrenheit={{Celsius|celToFah|number:".2"}}&#8457;</p>
+                </mat-menu>
+                <button mat-flat-button [matMenuTriggerFor]="appMenu3" color="warn"><b>Contact</b></button>
+                <mat-menu #appMenu3="matMenu">
+                    <button mat-menu-item><b>Developed by:Fazeel Ansari</b></button>
+                    <button mat-menu-item><b>Phone: (+91) 112233</b></button>
+                </mat-menu>   
+            </div>
+            </div>
+            <div>
+                <button mat-icon-button>
+                    <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
+                    <span *ngIf="!deviceXs">Menu</span>
+                </button>
+            </div>
+            </mat-toolbar-row>
+            <mat-toolbar-row *ngIf="deviceXs" fxLayout="space-between end">
+                <button mat-flat-button [matMenuTriggerFor]="appMenu1" color="warn"><b>About</b></button>
+                <mat-menu #appMenu1="matMenu">
+                    <p mat-menu-item><b>Change from &#8451; to &#8457; and vice-versa</b></p>
+                </mat-menu>
+                <button mat-flat-button [matMenuTriggerFor]="appMenu2" color="warn"><b>Formula</b></button>
+                <mat-menu #appMenu2="matMenu">
+                <button mat-menu-item><b>C = (F − 32) * 5/9</b></button>
+                <button mat-menu-item><b>F=C(9/5)+32</b></button>
+                </mat-menu>
+                <button mat-flat-button [matMenuTriggerFor]="appMenu3" color="warn"><b>Contact</b></button>
+                <mat-menu #appMenu3="matMenu">
+                    <button mat-menu-item><b>Developed by:Fazeel Ansari</b></button>
+                    <button mat-menu-item><b>Phone: (+91) 112233</b></button>
+                </mat-menu>   
+            </mat-toolbar-row>
+            </mat-toolbar>
+<div class="app-name">
+    <h1>Temperature Converter</h1>
+</div>
+<section class="celsius-section">
+   <div>
+    <h2>Celsius to Fahrenheit</h2>
+    <div><h2>Celsius:<input style="width: 150px;" type="number" name="Celsius" [(ngModel)]="Celsius">&#8451;</h2></div>
+    <div><h2>Fahrenheit={{Celsius|celToFah|number:".2"}}&#8457;</h2></div>
+   </div>
+</section>
+
+<section class="fahrenheit-section">
+    <div>
+    <h2>Fahrenheit to Celsius</h2>
+     <div><h2>Fahrenheit:<input style="width: 150px;" type="number" name="Fahrenheit" [(ngModel)]="Fahrenheit">&#8457;</h2></div>   
+    <div><h2>Celsius={{Fahrenheit|fahToCel|number:".2"}}&#8451;</h2></div>
     </div>
-    <br>
-    <br>
-    
-    <div class="mat-display-1 divs" style="margin:auto;width:50%;">
-    <h3 class="mat-display-1 h1s" ><b>Fahrenheit to Celsius</b></h3>
-    <p>Fahrenheit:<input type="number" name="Fahrenheit" [(ngModel)]="Fahrenheit">&#8457;</p>
-    <p>Celsius={{Fahrenheit|fahToCel|number:".2"}}&#8451;</p>
-    </div>
-    <br>
-    
+</section>

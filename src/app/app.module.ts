@@ -9,18 +9,28 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment'
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { CAndFComponent } from './c-and-f/c-and-f.component';
+import { CAndKComponent } from './c-and-k/c-and-k.component';
+import { AppRoutingModule} from './app-routing.module';
+import { CelToKelPipe } from './cel-to-kel.pipe';
+import { KelToCelPipe } from './kel-to-cel.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CelToFahPipe,
     FahToCelPipe,
+    CAndFComponent,
+    CAndKComponent,
+    CelToKelPipe,
+    KelToCelPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     FlexLayoutModule,
     ServiceWorkerModule.register('ngsw-worker.js', {

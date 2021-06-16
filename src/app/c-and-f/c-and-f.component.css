@@ -1,0 +1,22 @@
+
+.celsius-section {
+  display: flex;
+  height: 250px;
+  background: yellow;
+align-items: center;
+justify-content: center;
+color: black;
+}
+h2 {
+    font-family: 'Lato';
+    font-weight:300;
+    font-size:30px;
+}
+.fahrenheit-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 250px;
+    color: yellow;
+}

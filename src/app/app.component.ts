@@ -9,8 +9,8 @@ import {Subscription} from 'rxjs';
 })
 export class AppComponent implements OnInit,OnDestroy{
   title = 'TEMPERATURE CONVERTER';
-  public Celsius:number=0.0;
-  public Fahrenheit:number=0.0;
+  // public Celsius:number=0.0;
+  // public Fahrenheit:number=0.0;
    mediaSub: Subscription = new Subscription;
    deviceXs!: boolean;
   constructor(

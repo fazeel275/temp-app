@@ -1,67 +1,63 @@
 
-    <mat-toolbar color="primary">
+    <mat-toolbar style="background-color:black;">
         <mat-toolbar-row fxLayoutAlign="space-between center">
             <div fxLayout="row">
                 <button mat-button>
-                    <mat-icon>eco</mat-icon>
+                    <mat-icon style="color: yellow;">eco</mat-icon>
                     <span class="logo"><b>Fazeel</b></span>
                 </button>
                 <div *ngIf="!deviceXs">
-                <button mat-flat-button [matMenuTriggerFor]="appMenu1" color="warn"><b>About</b></button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu1"><b>About</b></button>
                 <mat-menu #appMenu1="matMenu">
-                    <p mat-menu-item><b>Change from &#8451; to &#8457; and vice-versa</b></p>
+                <p mat-menu-item style="color: yellow;background: black;">Change from &#8451; to &#8457; and vice-versa</p>
+                <p mat-menu-item style="color: yellow;background: rgb(22,28,41);">Change from &#8451; to &#8490; and vice-versa</p>
                 </mat-menu>
-                <button mat-flat-button [matMenuTriggerFor]="appMenu2" color="warn"><b>Formula</b></button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu2"><b>Formula</b></button>
                 <mat-menu #appMenu2="matMenu">
-                <button mat-menu-item><b>C = (F − 32) * 5/9</b></button>
-                <button mat-menu-item><b>F=C(9/5)+32</b></button>
+                <p mat-menu-item style="color: yellow;background: black;">C = (F − 32) * 5/9</p>
+                <p mat-menu-item style="color: yellow;background: rgb(22,28,41)">F=C(9/5)+32</p>
+                <p mat-menu-item style="color: yellow;background: black;">C=K-273.15</p>
+                <p mat-menu-item style="color: yellow;background: rgb(22,28,41)">K=C+273.15</p>
                 </mat-menu>
-                <button mat-flat-button [matMenuTriggerFor]="appMenu3" color="warn"><b>Contact</b></button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu3"><b>Contact</b></button>
                 <mat-menu #appMenu3="matMenu">
-                    <button mat-menu-item><b>Developed by:Fazeel Ansari</b></button>
-                    <button mat-menu-item><b>Phone: (+91) 112233</b></button>
+                <p mat-menu-item style="color: yellow;background: black;">Developed by:Fazeel Ansari</p>
                 </mat-menu>   
             </div>
             </div>
             <div>
-                <button mat-icon-button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu4">
                     <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
+                    <mat-menu #appMenu4="matMenu">
+                        <button class="btn" style="background-color: black;color: yellow;" routerLink="CelToFah">C<==>F</button>
+                        <br>
+                        <hr>
+                        <button class="btn" style="background-color: rgb(22,28,41);color: yellow;" routerLink="CelToKel">C<==>K</button>
+                    </mat-menu>
                     <span *ngIf="!deviceXs">Menu</span>
                 </button>
             </div>
             </mat-toolbar-row>
             <mat-toolbar-row *ngIf="deviceXs" fxLayout="space-between end">
-                <button mat-flat-button [matMenuTriggerFor]="appMenu1" color="warn"><b>About</b></button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu1"><b>About</b></button>
                 <mat-menu #appMenu1="matMenu">
-                    <p mat-menu-item><b>Change from &#8451; to &#8457; and vice-versa</b></p>
+                <p mat-menu-item style="color: yellow;background: black;">Change from &#8451; to &#8457; and vice-versa</p>
+                <p mat-menu-item style="color: yellow;background: rgb(22,28,41);">Change from &#8451; to &#8490; and vice-versa</p>
                 </mat-menu>
-                <button mat-flat-button [matMenuTriggerFor]="appMenu2" color="warn"><b>Formula</b></button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu2"><b>Formula</b></button>
                 <mat-menu #appMenu2="matMenu">
-                <button mat-menu-item><b>C = (F − 32) * 5/9</b></button>
-                <button mat-menu-item><b>F=C(9/5)+32</b></button>
+                <p mat-menu-item style="color: yellow;background: black;">C = (F − 32) * 5/9</p>
+                <p mat-menu-item style="color: yellow;background: rgb(22,28,41);">F=C(9/5)+32</p>
+                <p mat-menu-item style="color: yellow;background: black;">C=K-273.15</p>
+                <p mat-menu-item style="color: yellow;background: rgb(22,28,41);">K=C+273.15</p>
                 </mat-menu>
-                <button mat-flat-button [matMenuTriggerFor]="appMenu3" color="warn"><b>Contact</b></button>
+                <button class="btn btn-warning" [matMenuTriggerFor]="appMenu3"><b>Contact</b></button>
                 <mat-menu #appMenu3="matMenu">
-                    <button mat-menu-item><b>Developed by:Fazeel Ansari</b></button>
-                    <button mat-menu-item><b>Phone: (+91) 112233</b></button>
+                <p mat-menu-item style="color: yellow;background: black;">Developed by:Fazeel Ansari</p>
                 </mat-menu>   
             </mat-toolbar-row>
             </mat-toolbar>
-<div class="app-name">
-    <h1>Temperature Converter</h1>
-</div>
-<section class="celsius-section">
-   <div>
-    <h2>Celsius to Fahrenheit</h2>
-    <div><h2>Celsius:<input style="width: 150px;" type="number" name="Celsius" [(ngModel)]="Celsius">&#8451;</h2></div>
-    <div><h2>Fahrenheit={{Celsius|celToFah|number:".2"}}&#8457;</h2></div>
-   </div>
-</section>
-
-<section class="fahrenheit-section">
-    <div>
-    <h2>Fahrenheit to Celsius</h2>
-     <div><h2>Fahrenheit:<input style="width: 150px;" type="number" name="Fahrenheit" [(ngModel)]="Fahrenheit">&#8457;</h2></div>   
-    <div><h2>Celsius={{Fahrenheit|fahToCel|number:".2"}}&#8451;</h2></div>
-    </div>
-</section>
+            <div class="app-name">
+                <h1>Temperature Converter</h1>
+            </div>
+<router-outlet></router-outlet>

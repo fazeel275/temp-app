@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1622656159845,
+  "timestamp": 1623837462663,
   "index": "https://fazeel275.github.io/temp-app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://fazeel275.github.io/temp-app/favicon.ico",
         "https://fazeel275.github.io/temp-app/index.html",
-        "https://fazeel275.github.io/temp-app/main.42d8f5891d2cc1972ab1.js",
+        "https://fazeel275.github.io/temp-app/main.b0f1769aee5c01c266f0.js",
         "https://fazeel275.github.io/temp-app/manifest.webmanifest",
         "https://fazeel275.github.io/temp-app/polyfills.94daefd414b8355106ab.js",
         "https://fazeel275.github.io/temp-app/runtime.7b63b9fd40098a2e8207.js",
@@ -52,8 +52,8 @@
     "https://fazeel275.github.io/temp-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://fazeel275.github.io/temp-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://fazeel275.github.io/temp-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://fazeel275.github.io/temp-app/index.html": "51e418afa42949840272254d6b96f9add646eede",
-    "https://fazeel275.github.io/temp-app/main.42d8f5891d2cc1972ab1.js": "42ddd7c25ee6ec2cba20ff7a8b9a3fe36227fd2f",
+    "https://fazeel275.github.io/temp-app/index.html": "177c86b1459e84273b2149f4d4a60426606c3e71",
+    "https://fazeel275.github.io/temp-app/main.b0f1769aee5c01c266f0.js": "ee97c0841d26b97cc03e7fc72df0b07973369893",
     "https://fazeel275.github.io/temp-app/manifest.webmanifest": "6410f352107eeacd5e0ea4ca89c65c36b9710602",
     "https://fazeel275.github.io/temp-app/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://fazeel275.github.io/temp-app/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
